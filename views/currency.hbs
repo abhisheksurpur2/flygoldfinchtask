@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label>enter amt :</label>
+    <form method = "GET" onsubmit=" getamt() ">
+    <input name = "amt" type="text" id = "amt" />
+    <br/>
+   <h3><label style =" color:blueviolet ">Choose a cur 1:</label></h3> 
+
+    
+    {{!-- [{"currency":"XCD","name":"East Caribbean dollar","symbol":"$"},{"currency":"EUR","name":"European euro","symbol":"€"},{"currency":"GEL","name":"Georgian lari","symbol":"₾"},{"currency":"XCD","name":"East Caribbean dollar","symbol":"$"},
+    {"currency":"HTG","name":"Haitian gourde","symbol":"G"},{"currency":"INR","name":"Indian rupee","symbol":"₹"},{"currency":"ILS","name":"Israeli new sheqel","symbol":"₪"},
+    {"currency":"KZT","name":"Kazakhstani tenge","symbol":"лв"},{"currency":"KWD","name":"Kuwaiti dinar","symbol":"د.ك"},{"currency":"LSL","name":"Lesotho loti","symbol":"L”},
+{ "currency": "INR", "name": "Indian rupee", "symbol": "₹” },{"currency":"USD","name":"U.S. Dollar","symbol":"$”}] --}}
+
+
+{{!-- This can also be done by using json data but here it is done manually --}}
+
+<select name="curs1" id="curs1">
+  <option value="XCD">East Caribbean dollar</option>
+  <option value="EUR">European euro</option>
+  <option value="INR">Indian rupee</option>
+  <option value="USD">US dollar</option>
+  
+  <option value="GEL">goergian lari</option>
+  <option value="ILS">ISreaili seqel</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+  
+  <option value="KZT">Kazakhstani tenge</option>
+  <option value="KWD">Kuwaiti dinar</option>
+  <option value="LSL">Lesotho loti</option>
+
+</select>
+
+<br/>
+
+ <br/>
+   <h3><label style =" color:blueviolet ">Choose a cur 2:</label></h3>
+
+<select name="curs2" id="curs2">
+
+  <option value="XCD">East Caribbean dollar</option>
+  <option value="EUR">European euro</option>
+  <option value="INR">Indian rupee</option>
+  <option value="USD">US dollar</option>
+  
+  <option value="GEL">goergian lari</option>
+  <option value="ILS">ISreaili seqel</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+  
+  <option value="KZT">Kazakhstani tenge</option>
+  <option value="KWD">Kuwaiti dinar</option>
+  <option value="LSL">Lesotho loti</option>
+  
+</select>
+
+<br/>
+<br/>
+
+<input type="submit"  value ="get conversion "/>
+<br/>
+</form>
+<br/>
+<label>converted amt is : {{amt}}</label>
+<br/>
+<a href='names'> 
+  <button class="GFG"> 
+      prev page
+  </button> 
+</a>
+</body>
+</html>

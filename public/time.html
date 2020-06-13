@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<h2 id="txt" style = " color: blueviolet;"></h2>
+
+<a href='names'> 
+  <button class="GFG"> 
+      next page
+  </button> 
+</a> 
+
+<a href='home.html'> 
+  <button class="GFG"> 
+      prev page
+  </button> 
+</a>
+
+</body>
+</html>

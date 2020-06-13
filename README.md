@@ -1,3 +1,3 @@
 # flygoldfinchtask
 
-Run the app.js file & localhost:3000 in the browser
+Run the app.js file by command "node app.js" in root of the project & open localhost:3000 in the browser
